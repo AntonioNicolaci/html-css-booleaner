@@ -13,14 +13,13 @@
     
 }
 
-#Primo_Lorem{
+Lorem{
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
-#blue{
+.blue{
     color:rgb(11, 120, 192);
-    word-wrap: break-word;
 }
 
 #titolo{
@@ -38,3 +37,35 @@ ul{
 p{
     margin: 0px;
 }
+
+
+
+table{
+    color:brown;
+    margin: 20px 0;
+    background-color:aqua
+}
+
+#thead{
+    background-color: rgb(11, 120, 192);
+    color: aliceblue;
+}
+
+
+.colonna_uno{
+    padding: 0%;
+    text-align: center;
+}
+.colonna_due{
+    padding: 0%;
+    text-align: center;
+}
+.colonna_tre{
+    padding: 0%;
+    text-align: center;
+}
+
+.riga_b{
+    background-color: aquamarine;
+}
+
