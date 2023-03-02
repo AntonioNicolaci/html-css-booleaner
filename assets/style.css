@@ -1,4 +1,10 @@
-p{  /*comprime i paragrafi verso le immagini*/
+header{ /* Inserisce l'immagine che si ripete e un colore di sfondo */
+    background-color: RGB(78, 160, 255);
+    background-image: url("../img/pattern.png");
+    background-repeat: repeat;
+}
+
+p, #titolo{  /*comprime i paragrafi verso le immagini*/
     margin: 0px;
 }
 
@@ -11,18 +17,17 @@ table{ /* varie specifiche per la tabella */
     border-spacing: 0px;
 }
 
+thead{ /* mimando il tag thead divide le altre righe, colora di bianco le scritte e di blu lo sfondo della riga */
+    background-color: RGB(32, 169, 229);
+    color: RGB(206, 235, 249);
+}
+
 h3{ /* colora i sottotitoli nella zona degli articoli consigliati */
     color: RGB(157, 157, 157);
 }
 
 #container{ /* serve a comprimere gran parte del contenuto e renderlo grande tanto quanto le immagini */
     margin: 0% 46% 0% 0%;
-}
-
-#logo{ /* Inserisce l'immagine che si ripete e un colore di sfondo */
-    background-color: RGB(78, 160, 255);
-    background-image: url("../img/pattern.png");
-    background-repeat: repeat;
 }
 
 #img_logo{ /* ridimensiona il logo e lo sposta in basso a sinistra */
@@ -34,17 +39,8 @@ h3{ /* colora i sottotitoli nella zona degli articoli consigliati */
     margin-bottom: 20px;
 }
 
-#titolo{ /* schiaccia il titolotra il logo e le foto */
-    margin: 0px;
-}
-
 #blue{ /* colora il nome del giornalista di blu */
     color:RGB(50, 176, 230);
-}
-
-#thead{ /* mimando il tag thead divide le altre righe, colora di bianco le scritte e di blu lo sfondo della riga */
-    background-color: RGB(32, 169, 229);
-    color: RGB(206, 235, 249);
 }
 
 #td_uno{ /* sistema e alline il testo in base a quale colonna è */
@@ -53,52 +49,45 @@ h3{ /* colora i sottotitoli nella zona degli articoli consigliati */
 }
 
 #td_due{ /* sistema e alline il testo in base a quale colonna è */
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px 25px;
     text-align: center;
 }
 
 #td_tre{ /* sistema e alline il testo in base a quale colonna è */
-    padding-left: 25px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px 0px 0px 25px;
     text-align: left;
 }
 
 #riga_b{ /* colora lo sfondo della riga di bianco */
-    background-color: RGB(255, 255, 255);
+    background-color: white;
 }
 
 #consigliati_1{ /* serve per spostare il titolo sopra l'immagine e di colorarlo di bianco */
+    margin-top: 10px;
+}
+
+#consigliati_2{ /* serve per spostare il titolo sopra l'immagine e di colorarlo di bianco */
+    margin-top: 220px;
+}
+
+#img_consigliati{ /* sposta l'immagine su un livello più basso rispetto al titolo */
+    margin-top: 208px;
+}
+
+.consigliati{
     position: absolute;
     z-index: 2;
-    margin-top: 10px;
     margin-left: 10px;
     color: aliceblue;
 }
 
-#img_consigliati_1{ /* sposta l'immagine su un livello più basso rispetto al titolo */
+.img_consigliati{ /* sposta l'immagine su un livello più basso rispetto al titolo */
     position: absolute;
     z-index: 1;
-}
-
-#consigliati_2{ /* serve per spostare il titolo sopra l'immagine e di colorarlo di bianco */
-    position: absolute;
-    z-index: 2;
-    margin-top: 220px;
-    margin-left: 10px;
-    color:beige;
-}
-
-#img_consigliati_2{ /* sposta l'immagine su un livello più basso rispetto al titolo */
-    position: absolute;
-    z-index: 1;
-    margin-top: 208px;
 }
 
 .lorem{ /* sposta il paragrafo rispetto agli altri elementi */
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0px;
 }
 
 .yellow{ /* colora le sezioni specifiche */

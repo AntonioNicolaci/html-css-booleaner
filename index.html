@@ -7,9 +7,9 @@
     <title>The Booleaners</title>
 </head>
 <body>
-    <div id="logo"> 
+    <header> 
         <img id="img_logo" src="img/logo.svg" alt="logo">
-    </div>
+    </header>
 
     <div id="container"> <!-- div che serve per dividere questa parte da tutto per poterla comprimere in base alle immagini-->
         <div id="images"> <!-- è presente la parte del titolo e delle immagini-->
@@ -22,9 +22,9 @@
             <p>2nd Photo: Wikimedia, by Paul Clarke</p>
         </div>
 
-        <div class="lorem"> <!-- primo Lorem con una parte evidenziata -->
+        <article class="lorem"> <!-- primo Lorem con una parte evidenziata -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam magnam sint dolorem autem, nisi fuga odit similique totam maiores non, perferendis dolor odio, modi dicta distinctio natus in <span class="yellow">quidem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit unde, earum, asperiores quidem dolorem illum voluptates ea perspiciatis</span> magnam quia deserunt facilis laborum neque! Dolores eveniet fugit exercitationem in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ea nulla voluptatum quasi quos modi id! Fugiat temporibus voluptate distinctio sint quisquam! Rerum, doloribus magnam! Ullam dolorum commodi ipsam neque.
-        </div>
+        </article>
 
         <div> <!-- lista ordinata con tre punti-->
             <ul>
@@ -35,11 +35,13 @@
         </div>
 
         <table> <!-- tabella che contiene quattro righe e tre colonne-->
-            <tr id="thead"> <!-- zona dei titoli della tabella di colore blu scuro-->
-                <td class="td_uno">Lorem ipsum dolor</td>
-                <td class="td_due">Lorem ipsum dolor</td>
-                <td class="td_tre">Lorem ipsum dolor</td>
-            </tr>
+            <thead>
+                <tr> <!-- zona dei titoli della tabella di colore blu scuro-->
+                    <td class="td_uno">Lorem ipsum dolor</td>
+                    <td class="td_due">Lorem ipsum dolor</td>
+                    <td class="td_tre">Lorem ipsum dolor</td>
+                </tr>
+            </thead>
             <tr class="riga_a"> <!-- prima riga di colore azzurro scuro-->
                 <td class="colonna_uno">Lorem ipsum dolor</td>
                 <td class="colonna_due">Lorem ipsum dolor</td>
@@ -63,11 +65,11 @@
         
         <div> <!-- zona finale con due immagini che servono a consigliare degli altri articoli-->
             <h3>Potrebbero interessarti</h3>
-            <h3 id="consigliati_1">Lorem Ipsum dolor</h3>
-            <img id="img_consigliati_1" src="img/monitor.jpg" alt="monitor">
+            <h3 class="consigliati" id="consigliati_1">Lorem Ipsum dolor</h3>
+            <img class="img_consigliati" src="img/monitor.jpg" alt="monitor">
             <br>  <!-- chiedo scusa ma è l'uni ca cosa che mi è venuta in mente al momento-->
-            <h3 id="consigliati_2">Lorem Ipsum dolor</h3>
-            <img id="img_consigliati_2" src="img/graph.jpg" alt="graph">
+            <h3 class="consigliati" id="consigliati_2">Lorem Ipsum dolor</h3>
+            <img class="img_consigliati" id="img_consigliati" src="img/graph.jpg" alt="graph">
         </div>
     </div>
 
